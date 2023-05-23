@@ -6,7 +6,7 @@ import Login from "./views/Auth/Login.jsx";
 import NotFound from "./views/NotFound";
 import Signup from "./views/Auth/Signup.jsx";
 import Users from "./views/User/Users.jsx";
-import UserForm from "./views/UserForm";
+import UserForm from "./views/User/UserForm.jsx";
 
 const router = createBrowserRouter([
   {

@@ -37,74 +37,13 @@ export default function Users() {
   };
 
   return (
-    /* <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <h1>Users</h1>
-        <Link className="btn-add" to="/users/new">
-          Add new
-        </Link>
-      </div>
-      <div className="card animated fadeInDown">
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Create Date</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          {loading && (
-            <tbody>
-              <tr>
-                <td colSpan="5" className="text-center">
-                  Loading...
-                </td>
-              </tr>
-            </tbody>
-          )}
-          {!loading && (
-            <tbody>
-              {users.map((u) => (
-                <tr key={u.id}>
-                  <td>{u.id}</td>
-                  <td>{u.name}</td>
-                  <td>{u.email}</td>
-                  <td>{u.created_at}</td>
-                  <td>
-                    <Link className="btn-edit" to={"/users/" + u.id}>
-                      Edit
-                    </Link>
-                    &nbsp;
-                    <button
-                      className="btn-delete"
-                      onClick={(ev) => onDeleteClick(u)}
-                    >
-                      Delete
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          )}
-        </table>
-      </div>
-    </div> */
-
     <>
       <BreadCrumb />
       <div id="content" className="padding-20">
         <div id="panel-1" className="panel panel-default">
           <div className="panel-heading">
             <span className="title elipsis">
-              <strong>MANAGED DATATABLE</strong>
+              <strong>Users</strong>
             </span>
             <ul className="options pull-right list-inline">
               <li>
@@ -153,12 +92,6 @@ export default function Users() {
                 </a>
               </li>
             </ul>
-
-            {/*                         <ul className="options pull-right list-inline">
-                            <li><a href="#" className="opt panel_colapse" data-toggle="tooltip" title="Colapse" data-placement="bottom"></a></li>
-                            <li><a href="#" className="opt panel_fullscreen hidden-xs" data-toggle="tooltip" title="Fullscreen" data-placement="bottom"><i className="fa fa-expand"></i></a></li>
-                            <li><a href="#" className="opt panel_close" data-confirm-title="Confirm" data-confirm-message="Are you sure you want to remove this panel?" data-toggle="tooltip" title="Close" data-placement="bottom"><i className="fa fa-times"></i></a></li>
-                        </ul> */}
           </div>
 
           <div className="panel-body">
